@@ -11,11 +11,11 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="org.apache.httpcomponents:httpclient:4.5.5" level="project" />
-    <orderEntry type="library" name="com.alibaba:fastjson:1.2.47" level="project" />
-    <orderEntry type="library" name="com.fasterxml.jackson.core:jackson-annotations:2.8.4" level="project" />
-    <orderEntry type="library" name="com.fasterxml.jackson.core:jackson-core:2.8.4" level="project" />
-    <orderEntry type="library" name="com.fasterxml.jackson.core:jackson-databind:2.8.4" level="project" />
-    <orderEntry type="library" name="org.apache.commons:commons-lang3:3.3.2" level="project" />
+    <orderEntry type="library" exported="" name="org.apache.httpcomponents:httpclient:4.5.5" level="project" />
+    <orderEntry type="library" exported="" name="com.alibaba:fastjson:1.2.47" level="project" />
+    <orderEntry type="library" exported="" name="com.fasterxml.jackson.core:jackson-annotations:2.8.4" level="project" />
+    <orderEntry type="library" exported="" name="com.fasterxml.jackson.core:jackson-core:2.8.4" level="project" />
+    <orderEntry type="library" exported="" name="com.fasterxml.jackson.core:jackson-databind:2.8.4" level="project" />
+    <orderEntry type="library" exported="" name="org.apache.commons:commons-lang3:3.3.2" level="project" />
   </component>
 </module>
