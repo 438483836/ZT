@@ -1,5 +1,7 @@
-package entity;
+package com.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -8,6 +10,8 @@ import java.util.Date;
  * @author xiaoMa
  * @date 2018-6-12 17:15:54
  */
+@Entity
+@Table(name = "person")
 public class ZtoRequestData implements Serializable {
     private static final long serialVersionUID = 2206295714373012374L;
 
@@ -38,7 +42,11 @@ public class ZtoRequestData implements Serializable {
     /**
      * 数据上传时间
      */
-    private Date lineCode;
+    private Date uploadTime;
+    /**
+     * 数据上传时间
+     */
+    private String lineCode;
     /**
      * pda编码
      */
@@ -95,11 +103,11 @@ public class ZtoRequestData implements Serializable {
         this.siteName = siteName;
     }
 
-    public Date getLineCode() {
+    public String getLineCode() {
         return lineCode;
     }
 
-    public void setLineCode(Date lineCode) {
+    public void setLineCode(String lineCode) {
         this.lineCode = lineCode;
     }
 
@@ -109,5 +117,13 @@ public class ZtoRequestData implements Serializable {
 
     public void setPdaCode(String pdaCode) {
         this.pdaCode = pdaCode;
+    }
+
+    public Date getUploadTime() {
+        return uploadTime;
+    }
+
+    public void setUploadTime(Date uploadTime) {
+        this.uploadTime = uploadTime;
     }
 }

@@ -1,4 +1,4 @@
-package utils;
+package com.utils;
 
 import org.apache.commons.lang3.StringUtils;
 import org.joda.time.DateTime;

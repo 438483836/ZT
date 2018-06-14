@@ -1,14 +1,14 @@
-package service;
+package com.service;
 
-import com.alibaba.fastjson.JSONObject;
-import entity.ZtoRequestData;
-import entity.ZtoRequestTO;
-import entity.ZtoResponseTO;
+import com.entity.ZtoRequestData;
+import com.entity.ZtoRequestTO;
+import com.entity.ZtoResponseTO;
+import com.utils.GetSignData;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import utils.HttpClientUtils;
-import utils.JSONUtils;
+import com.utils.HttpClientUtils;
+import com.utils.JSONUtils;
 
 public class ZTOSerive {
     private static final Logger logger = LoggerFactory.getLogger(ZTOSerive.class);
@@ -27,7 +27,8 @@ public class ZTOSerive {
             //拼装请求体
             ZtoRequestTO ztoRequestTO = new ZtoRequestTO();
             ztoRequestTO.setData(request);
-            ztoRequestTO.setData_digest(getSignData(request, ""));
+            //ztoRequestTO.setData_digest(getSignData(request, ""));
+            ztoRequestTO.setData_digest(GetSignData.getSignData(request,""));
             ztoRequestTO.setMsg_type("SORTING_BAG_BIND");
             ztoRequestTO.setCompany_id("zto");
 
